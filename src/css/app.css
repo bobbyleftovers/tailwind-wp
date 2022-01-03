@@ -1,0 +1,26 @@
+/* sass mixins */
+/* @import "./global/mixins"; */
+
+/* base */
+@import "../../node_modules/tailwindcss/base";
+@import './global/fonts';
+@import './global/typography';
+
+/* components */
+@import "../../node_modules/tailwindcss/components";
+@import './components/mobile-nav';
+@import './components/image-copy-slider';
+@import './components/arrow';
+@import './components/button';
+@import './components/image';
+@import './components/nav-menu';
+@import './components/gsap-carousel';
+@import './components/footer-subscribe';
+@import './components/company-index';
+
+/* utilities */
+@import "../../node_modules/tailwindcss/utilities";
+
+
+/* npm */
+@import "../../node_modules/@glidejs/glide/dist/css/glide.core.min";

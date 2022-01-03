@@ -1,0 +1,21 @@
+@layer components {
+  .btn {
+    @apply p-e16 text-white text-base border border-orange leading-none bg-transparent font-semibold uppercase inline-flex justify-between min-w-e240 items-center;
+
+    &.btn--white {
+      @apply text-white;
+    }
+
+    &.btn--black {
+      @apply text-black;
+    }
+
+    &.btn--blue {
+      @apply text-blue;
+    }
+
+    .arrow {
+      @apply inline-block ml-e30;
+    }
+  }
+}

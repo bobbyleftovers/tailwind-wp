@@ -13,8 +13,8 @@
 ## Adding Components
 1. Add PHP template file in `/components`
 2. Add CSS file in `/src/css/components` and add import to `/src/css/app.css`
-  - Best practice is to name the css file  the same as the php template for easier searching.
-  - Use the same name as the wrapping classname
+  - **NOTE:** Normal CSS will still compile but this theme uses tailwind so writing your own CSS is less necessary. No mixins or other utils are included apart from tailwinds config file. Component css files are just inteded leverage tailwinds `@apply` directive to clean up the lengthy class lists that would otherwise be in template files.
+  - Best practice is to name the css file the same as the php template for easier searching.
 3. Add JS file in `/src/js/components` (when js is needed)
   - No need to import these. In the template file add `data-component="{name}"` as an attr. The js file will be loaded once an reinstatiated for subsequent uses. The element the attr is placed on will be passed to the js function or classs per-use.
 4. To use, call `get_component({name}, [$args])`

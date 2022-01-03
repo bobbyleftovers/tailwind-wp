@@ -1,10 +1,11 @@
 # Tailwind Theme For WP With a Bunch of Tools 
 ## Tools
-- Tailwind CSS
-- PostCSS
-- Laravel Mix
-- JS Components
-- BEM
+- [Tailwind CSS](https://tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
+- [Laravel Mix](https://laravel.com/docs/8.x/mix)
+- [BEM](http://getbem.com/introduction/)
+- [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- JS Components Loader (hand-rolled!)
 ## CLI
 - `npm run watch`: runs `npx mix watch`, will monitor `/src` and all php files for changes
 - `npm run dev`: runs `npx mix` once and closes

@@ -4,8 +4,7 @@
 - [PostCSS](https://postcss.org/)
 - [Laravel Mix](https://laravel.com/docs/8.x/mix)
 - [BEM](http://getbem.com/introduction/)
-- [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
-- JS Components Loader (hand-rolled!)
+- JS Components Loader
 ## CLI
 - `npm run watch`: runs `npx mix watch`, will monitor `/src` and all php files for changes
 - `npm run dev`: runs `npx mix` once and closes

@@ -13,9 +13,5 @@
     &.btn--blue {
       @apply text-blue;
     }
-
-    .arrow {
-      @apply inline-block ml-e30;
-    }
   }
 }

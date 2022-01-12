@@ -8,13 +8,12 @@
         <div class="carousel__card-content h-e480 md:h-e585 lg:h-e660">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -29,7 +28,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -40,13 +38,12 @@
         <div class="carousel__card-content h-e510 md:h-e645 lg:h-e740">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -61,7 +58,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -72,13 +68,12 @@
         <div class="carousel__card-content h-e500 md:h-e625 lg:h-e700">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -93,7 +88,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -104,13 +98,12 @@
         <div class="carousel__card-content h-e480 md:h-e585 lg:h-e660">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -125,7 +118,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -136,13 +128,12 @@
         <div class="carousel__card-content h-e510 md:h-e645 lg:h-e740">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -157,7 +148,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -168,13 +158,12 @@
         <div class="carousel__card-content h-e500 md:h-e625 lg:h-e700">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -189,7 +178,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -200,13 +188,12 @@
         <div class="carousel__card-content h-e480 md:h-e585 lg:h-e660">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -221,7 +208,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -232,13 +218,12 @@
         <div class="carousel__card-content h-e510 md:h-e645 lg:h-e740">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -253,7 +238,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -264,13 +248,12 @@
         <div class="carousel__card-content h-e500 md:h-e625 lg:h-e700">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -285,7 +268,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -296,13 +278,12 @@
         <div class="carousel__card-content h-e480 md:h-e585 lg:h-e660">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -317,7 +298,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -328,13 +308,12 @@
         <div class="carousel__card-content h-e510 md:h-e645 lg:h-e740">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -349,7 +328,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>
@@ -360,13 +338,12 @@
         <div class="carousel__card-content h-e500 md:h-e625 lg:h-e700">
           <div class="carousel__card-inner">
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-logo.svg', 'alt' => 'company logo', 'wrap_classes' => 'carousel__card-logo']) ?>
-            <?= get_component('svg', ['icon' => 'close', 'classes' => 'carousel__card-close', 'viewbox' => '0 0 20 20']) ?>
             <?= get_component('image', ['image' => get_stylesheet_directory_uri().'/images/monday-people.png', 'alt' => 'company background image', 'cover' => true, 'wrap_classes' => 'carousel__card-bk', 'class' => 'object-left h-full']) ?>
             <span class="carousel__card-label absolute bottom-6 left-6 text-white text-xs font-semibold uppercase">Stage</span>
             <div class="carousel__subcard">
               <div class="subcard__content">
                 <div class="subcard__inner">
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon']) ?>
+                  <?= get_component('svg', ['icon' => 'close', 'classes' => 'subcard__icon', 'viewbox' => '0 0 20 20']) ?>
                   <span class="subcard__eyebrow">REBRANDING FOR CLARITY 1</span>
                   <div class="subcard__facts">
                     <span class="subcard__fact">Increased user base by 70% in 6 months.</span>
@@ -381,7 +358,6 @@
                 </div>
                 <a href="#" class="subcard__bottom">
                   <span class="subcard__link-text">See Case Study</span>
-                  <?= get_component('arrow', ['direction' => 'top-right', 'inner_color' => 'bg-purple-lt', 'wrap_classes' => 'subcard__icon subcard__icon--mobile']) ?>
                 </a>
               </div>
             </div>

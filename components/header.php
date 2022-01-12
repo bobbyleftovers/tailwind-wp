@@ -7,7 +7,7 @@
       <?= get_component('image', ['image' => $logo ?? null, 'classes' => 'logo']) ?>
     </a>
     <?= get_component('main-nav') ?>
-    <span class="mobile-nav__trigger z-210 md:hidden"><?= get_component('arrow', ['direction' => 'top-right']) ?></span>
+    <span class="mobile-nav__trigger z-210 md:hidden"><?= get_component('svg', ['icon' => 'close', 'viewbox' => '0 0 20 20']) ?></span>
   </div>
   <?= get_component('mobile-nav') ?>
 </header>

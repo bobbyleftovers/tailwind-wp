@@ -18,6 +18,8 @@ TEMPLATE_PATH="./components"
 CSS_PATH="./src/css/components"
 JS_PATH="./src/js/components"
 ACF_REGISTRATION_FILE="./lib/acf-block-registration.php"
+VUE_PATH="./src/js/vue"
+VUEX_PATH="./src/js/vuex"
 JS_USE_CLASS=0
 GUTENBERG=0
 
@@ -43,6 +45,12 @@ case $i in
     shift
     ;;
 
+    # Is this a vue component?
+    -v=*|--vue=*)
+    VUE="${i#*=}"
+    shift
+    ;;
+
     # Is any part being excluded?
     -e=*|--exclude=*)
     EXCLUDE="${i#*=}"
@@ -64,6 +72,7 @@ case $i in
     echo "Arguments:"
     echo "-n | --name - Module name: -n=the-component"
     echo "-g | --gutenberg - Create compoent as a gutenberg block: -g=1"
+    echo "-v | --vue - Create a Vue compoent: -v=1"
     echo "-j | --js-class - Create js as a class (default is a function): -g=1"
     echo "-e | --exclude - Exclude css or js files: -e=\"js css\"\n\n"
     shift # past argument with no value
@@ -84,6 +93,16 @@ if [ -z ${COMPONENT_NAME+x} ]; then
     read COMPONENT_NAME
 fi
 
+# If the component being created is a vue component
+if [ $VUE = 1 ]; then
+    # Create the template file
+    # Register it in app.js
+    #Finished
+    echo "${YELLOW}Finished creating component $COMPONENT_NAME!${DEFAULT}"
+    echo
+    exit
+fi
+
 ## Update Module Path
 # TEMPLATE_PATH="$TEMPLATE_PATH"
 # TEMPLATE_PATH="$TEMPLATE_PATH/$COMPONENT_NAME"
@@ -98,12 +117,11 @@ SANITIZED_COMPONENT_NAME=`echo "$COMPONENT_NAME" | sed 's/[\._-]//g'`
 
 
 # Create a name for registering in gutenberg by removing hypens and replacing with spaces...
-echo $COMPONENT_NAME
 GUTENBERG_NAME=`echo "$COMPONENT_NAME" | sed 's/[\._-]/ /g'`
 # then capitalize the string
-echo $GUTENBERG_NAME
 GUTENBERG_NAME=`echo $GUTENBERG_NAME | awk 'BEGIN{RS = " "};{printf("%s ", toupper(substr($0, 1, 1)) substr($0, 2))}'`
-echo $GUTENBERG_NAME
+
+
 
 # PHP File
 if [[ -e "$COMPONENT_FILE.php" ]]; then

@@ -8,19 +8,17 @@ import {init, editorInit} from './lib/init-components'
 // Initialize Vue.
 import Vue from 'vue/dist/vue.js';
 import Vuex from 'vuex';
-import CompanyIndexState from './vuex/CompanyIndexState';
+// import CompanyIndexState from './vuex/CompanyIndexState';
 Vue.use(Vuex);
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('#vue-app')) {
-    Vue.component('company-index', require('./components/vue/CompanyIndex.vue').default);
-    Vue.component('company-card', require('./components/vue/CompanyCard.vue').default);
-    Vue.component('company-modal', require('./components/vue/CompanyModal.vue').default);
-    Vue.component('user-index', require('./components/vue/UserIndex.vue').default);
-    Vue.component('user-card', require('./components/vue/UserCard.vue').default);
+    /* Vue Components -- DO-NOT-DELETE-THIS-LINE */
+    Vue.component('vue-demo', require('./components/vue/VueDemo.vue').default)
     const store = new Vuex.Store({
+      /* Vuex Modules -- DO-NOT-DELETE-THIS-LINE */
       modules: {
-        CompanyIndexState
+        // CompanyIndexState
       }
     });
 

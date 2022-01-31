@@ -36,4 +36,8 @@
   .copy-lg {
     @apply text-md lg:text-lg;
   }
+
+  a {
+    @apply decoration-1 decoration-orange hover:underline;
+  }
 }

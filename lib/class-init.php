@@ -11,7 +11,7 @@ class ThemeInit {
 
 
     // Custom post types
-    // new Cpt('Goals', 'Goal', 'goals');
+    new Cpt('Piano Keys', 'Piano Key', 'piano_keys', ['publicly_queryable'  => false]);
 
     // Custom taoxnomies
     // new Taxonomy('Quote Voices', 'Quote Voice', 'quote_voice', ['quotes']);

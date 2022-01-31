@@ -1,7 +1,21 @@
 @layer components {
+    .mobile-nav__trigger {
+      .arrow__outter {
+        @apply border-orange;
+      }
+
+      .arrow__inner {
+        @apply bg-white;
+      }
+    }
+  
     .mobile-nav__trigger.active {
-      .svg {
+      .arrow {
         @apply rotate-180;
+      }
+
+      .arrow__outter {
+        @apply border-white;
       }
     }
 

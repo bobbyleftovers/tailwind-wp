@@ -73,25 +73,19 @@
         <path d="M1063.27275,457 L1071.72727,448.545477 C1072.09091,448.181835 1072.09091,447.636373 1071.72727,447.272731 C1071.36363,446.90909 1070.81816,446.90909 1070.45452,447.272731 L1062,455.727254 L1053.54548,447.272731 C1053.18184,446.90909 1052.63637,446.90909 1052.27273,447.272731 C1051.90909,447.636373 1051.90909,448.181835 1052.27273,448.545477 L1060.72725,457 L1052.27273,465.454523 C1051.90909,465.818165 1051.90909,466.363627 1052.27273,466.727269 C1052.45455,466.90909 1052.63637,467 1052.9091,467 C1053.18184,467 1053.36366,466.90909 1053.54548,466.727269 L1062,458.272746 L1070.45452,466.727269 C1070.63634,466.90909 1070.90908,467 1071.0909,467 C1071.27272,467 1071.54545,466.90909 1071.72727,466.727269 C1072.09091,466.363627 1072.09091,465.818165 1071.72727,465.454523 L1063.27275,457 Z" transform="translate(-1052.000000, -447.000000)" fill="currentColor"></path>
     </symbol>
 
-    <symbol id="arrow-right-circle" stroke="none" fill="none">
-      <!-- 0 0 60 60 -->
-      <g transform="translate(-1271 -1023)">
-        <circle cx="30" cy="30" r="30" transform="translate(1271 1023)" fill="#fff" opacity="0.7"/>
-        <g transform="translate(1284 1053.023) rotate(-45)">
-          <line x2="22.576" y2="22.309" transform="translate(0 0)" fill="none" stroke="#ff531b" stroke-width="1"/>
-          <path d="M0,14.921H14.921V0" transform="translate(7.736 7.389)" fill="none" stroke="#182a35" stroke-width="1"/>
-        </g>
+    <symbol id="arrow-right" stroke="none" fill="none">
+      <!-- 0 0 45.947 45.658 -->
+      <g transform="translate(45.447 22.696) rotate(135)">
+        <line x2="31.766" y2="31.39" transform="translate(0 0)" fill="none" stroke="#ff531b" stroke-width="1"/>
+        <path d="M0,21H21V0" transform="translate(10.886 10.396)" fill="none" stroke="#182a35" stroke-width="1"/>
       </g>
     </symbol>
 
-    <symbol id="arrow-left-circle" stroke="none" fill="none">
-      <!-- 0 0 60 60 -->
-      <g transform="translate(1331 1083) rotate(180)">
-        <circle cx="30" cy="30" r="30" transform="translate(1271 1023)" fill="#fff" opacity="0.7"/>
-        <g transform="translate(1284 1053.023) rotate(-45)">
-          <line x2="22.576" y2="22.309" transform="translate(0 0)" fill="none" stroke="#ff531b" stroke-width="1"/>
-          <path d="M0,14.921H14.921V0" transform="translate(7.736 7.389)" fill="none" stroke="#182a35" stroke-width="1"/>
-        </g>
+    <symbol id="arrow-left" stroke="none" fill="none">
+      <!-- 0 0 45.947 45.658 -->
+      <g transform="translate(361.32 -458.494) rotate(45)">
+        <line y1="31.39" x2="31.766" transform="translate(85.115 564.001)" fill="none" stroke="#ff531b" stroke-width="1"/>
+        <path d="M96,564h21v21" transform="translate(0)" fill="none" stroke="#182a35" stroke-width="1"/>
       </g>
     </symbol>
 
@@ -100,6 +94,24 @@
       <g transform="translate(0.018 1)">
         <line y1="58.311" x2="58.311" transform="translate(0.689)" fill="none" stroke="#fff" stroke-width="2" opacity="0.427"/>
         <path d="M96,564h58.627v58.627" transform="translate(-96 -564)" fill="none" stroke="#fff" stroke-width="2"/>
+      </g>
+    </symbol>
+
+    <symbol id="email" stroke="none" fill="none">
+      <!-- 0 0 20 16 -->
+      <path d="M20,4H4A2,2,0,0,0,2.01,6L2,18a2.006,2.006,0,0,0,2,2H20a2.006,2.006,0,0,0,2-2V6A2.006,2.006,0,0,0,20,4Zm0,4-8,5L4,8V6l8,5,8-5Z" transform="translate(-2 -4)" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="play" stroke="none" fill="none">
+      <!-- 0 0 70 70 -->
+      <g transform="translate(-685 -5318)">
+        <g transform="translate(-581 4300)">
+          <circle cx="35" cy="35" r="35" transform="translate(1266 1018)" fill="#fff"/>
+        </g>
+        <g transform="translate(734 5341) rotate(90)" fill="none">
+          <path d="M12.5,0,25,21H0Z" stroke="none"/>
+          <path d="M 12.5 1.955087661743164 L 1.758979797363281 20 L 23.24102020263672 20 L 12.5 1.955087661743164 M 12.5 0 L 25 21 L 0 21 L 12.5 0 Z" stroke="none" fill="#ff531b"/>
+        </g>
       </g>
     </symbol>
   </defs>

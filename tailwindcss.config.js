@@ -1,6 +1,5 @@
 // const defaultTheme = require('tailwindcss/defaultTheme')
 // const colors = require("tailwindcss/colors")
-// console.log('=======',process.args.purge)
 
 const spacing = { // eslint-disable-line
   // Exact
@@ -8,9 +7,12 @@ const spacing = { // eslint-disable-line
   e1: '1px',
   e2: '2px',
   e3: '3px',
+  e5: '5px',
+  e8: '8px',
   e10: '10px',
   e15: '15px',
   e16: '16px',
+  e18: '18px',
   e20: '20px',
   e25: '25px',
   e30: '30px',
@@ -25,6 +27,7 @@ const spacing = { // eslint-disable-line
   e100: '100px',
   e110: '110px',
   e120: '120px',
+  e125: '125px',
   e130: '130px',
   e150: '150px',
   e160: '160px',
@@ -46,17 +49,18 @@ const spacing = { // eslint-disable-line
   e510: '510px',
   e530: '530px',
   e585: '585px',
+  e420: '420px',
   e490: '490px',
   e600: '600px',
   e625: '625px',
   e640: '640px',
   e645: '645px',
-  e660: '660px',
-  e670: '670px',
+  // e660: '660px',
+  // e670: '670px',
   e700: '700px',
-  e710: '710px',
+  // e710: '710px',
   e740: '740px',
-  e750: '750px',
+  // e750: '750px',
   e990: '990px',
 
   // Screen
@@ -108,8 +112,8 @@ module.exports = {
       'md': '768px',
       'lg': '992px',
       'xl': '1024px',
-      '2xl': '1280px',
-      '3xl': '1440px',
+      '2xl': '1350px',
+      '3xl': '1350px',
     },
     container: {
       center: true,
@@ -136,7 +140,8 @@ module.exports = {
       'base-alt': ['1.6rem', '2.4rem'],
       md: ['1.8rem', '2.4rem'],
       'md-alt': ['1.8rem', '3rem'],
-      lg: ['2.4rem', '3.6rem'],
+      'md-alt2': ['2.1rem', '2.7rem'],
+      lg: ['2.4rem', '3.6rem'], 
       xl: ['2.7rem', '3.6rem'],
       '2xl': ['3.6rem', '4.6rem'],
       '2xl-alt': ['4rem', '4.8rem'],
@@ -199,6 +204,7 @@ module.exports = {
       transparent: 'transparent',
       blue: '#182A35',
       'cadet-blue': '#9FABC4',
+      fiord: '#485670',
       sky: {
         DEFAULT: '#E4EBF1',
         lt: '#73C1D6',
@@ -210,9 +216,26 @@ module.exports = {
         lt: '#9E82E4'
       },
       magenta: '#B329F9',
+      red: {
+        '50': '#fef2f2',
+        '100': '#fee2e2',
+        '200': '#fecaca',
+        '300': '#fca5a5',
+        '400': '#f87171',
+        '500': '#ef4444',
+        '600': '#dc2626',
+        '700': '#b91c1c',
+        '800': '#991b1b',
+        '900': '#7f1d1d'
+      }
     },
     extend: {
       spacing: spacing,
+      order: {
+        '1': 1,
+        '2': 2,
+        '3': 3,
+      },
       rotate: {
         // '-45': '-45deg',
         '-90': '-90deg',
@@ -222,6 +245,8 @@ module.exports = {
       },
       maxWidth: {
         e120: '120px',
+        e330: '330px',
+        e550: '550px',
         e490: '490px',
         e880: '880px',
         e1440: '1440px'

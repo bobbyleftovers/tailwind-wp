@@ -9,7 +9,7 @@ const breakpoints =  {
 }
 const homeAnimationCookie = 'hero'
 const homeAnimationDuration = 1
-const homeAnimationDelay = 1.25
+const homeAnimationDelay = 1.5
 
 export {
   breakpoints,

@@ -1,5 +1,5 @@
 {
-  "name": "tailwind-wp",
+  "name": "insight",
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
@@ -10,7 +10,8 @@
     "watch": "npx mix watch",
     "dev": "npx mix",
     "prod": "npx mix --production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-component": "sh ./scripts/create-component.sh"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +26,9 @@
     "resolve-url-loader": "^4.0.0",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
-    "tailwindcss": "^3.0.7"
+    "tailwindcss": "^3.0.7",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14"
   },
   "dependencies": {
     "@glidejs/glide": "^3.5.2",
@@ -33,9 +36,12 @@
     "es6-promise-promise": "^1.0.0",
     "flickity": "^2.2.2",
     "gsap": "^3.8.0",
+    "jquery": "^3.6.0",
     "mix-tailwindcss": "^1.3.0",
     "svg-classlist-polyfill": "^1.0.6",
-    "tweezer.js": "^1.5.0"
+    "tweezer.js": "^1.5.0",
+    "vue": "^2.6.14",
+    "vuex": "^3.6.2"
   },
   "peerDependencies": {
     "postcss": "^8.3.7"

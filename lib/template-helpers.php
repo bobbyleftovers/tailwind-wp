@@ -3,6 +3,20 @@
  * Pagination starter code.
  */
 
+/***
+* Get the primary category set with yoast (Yoast SEO plugin must be active or it will return false)
+* @param $post_id: str|int -- the post ID
+*@param $taxonomy: str -- slug of the taxonomy you want (default is category)
+*/
+function yoast_get_primary_category($post_id, $taxonomy = 'category') {
+  $primary_cat_id = get_post_meta($post_id,'_yoast_wpseo_primary_' . $taxonomy, true);
+
+  if($primary_cat_id){
+    return get_term($primary_cat_id, $taxonomy);
+  }
+  return false;
+}
+
 function pagination_helper () {
   global $wp_query;
   if ( $wp_query->max_num_pages <= 1 ) return;

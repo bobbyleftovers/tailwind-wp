@@ -1,5 +1,5 @@
 <?php
-$classes = 'main-nav relative hidden md:block';?>
+$classes = 'main-nav relative hidden md:block opacity-0 top-28';?>
 <nav class="<?= $classes ?>"><?php
   wp_nav_menu( array(
     'theme_location'  => 'main-menu',

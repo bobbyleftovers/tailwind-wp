@@ -5,7 +5,8 @@ new ThemeInit();
 
 // Advanced Custom Field plugin.
 require_once( 'lib/acf.php' );
-// Enqueue scripts and styles.
+require_once( 'lib/acf-block-registration.php' );
+// // Enqueue scripts and styles.
 require_once( 'lib/enqueue-scripts.php' );
 // Register theme support for title tag, etc.
 require_once( 'lib/theme-support.php' );
@@ -34,3 +35,13 @@ require_once( 'lib/shortcodes.php' );
 require_once( 'lib/admin-editor.php' );
 // add a subdirectory for page templates
 require_once( 'lib/page-template-subdirectory.php' );
+
+/**
+ * Allow WHERE clauses to access ACF repeater fields.
+ */
+function insight_replace_repeater_field( $where ) {
+  $where = str_replace("meta_key = 'verticals_$'", "meta_key LIKE 'verticals_%_vertical'", $where );
+  $where = str_replace("meta_key = 'regions_$'", "meta_key LIKE 'regions_%_region'", $where );
+  return $where;
+}
+add_filter( 'posts_where', 'insight_replace_repeater_field' );

@@ -113,10 +113,10 @@ cat <<EOF >$COMPONENT_FILE.php
 /**
  * $COMPONENT_NAME Block Template.
  *
- * @param   array   $block -- The block settings and attributes.
- * @param   string  $content -- The block inner HTML (empty).
- * @param   bool    $is_preview -- True during AJAX preview.
- * @param   int     $post_id -- The post ID this block is saved to.
+ * @param   array   \$block -- The block settings and attributes.
+ * @param   string  \$content -- The block inner HTML (empty).
+ * @param   bool    \$is_preview -- True during AJAX preview.
+ * @param   int     \$post_id -- The post ID this block is saved to.
  */
  
 \$id = '$COMPONENT_NAME' . $block['id'];

@@ -8,17 +8,17 @@ import {init, editorInit} from './lib/init-components'
 // Initialize Vue.
 import Vue from 'vue/dist/vue.js';
 import Vuex from 'vuex';
-// import CompanyIndexState from './vuex/CompanyIndexState';
+// import VuexModuleName from './vuex/VuexModuleName';
 Vue.use(Vuex);
 
 document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('#vue-app')) {
     /* Vue Components -- DO-NOT-DELETE-THIS-LINE */
-    Vue.component('vue-demo', require('./components/vue/VueDemo.vue').default)
+    Vue.component('vue-demo', require('./components/vue/vue-demo.vue').default)
     const store = new Vuex.Store({
       /* Vuex Modules -- DO-NOT-DELETE-THIS-LINE */
       modules: {
-        // CompanyIndexState
+        // VuexModuleName
       }
     });
 

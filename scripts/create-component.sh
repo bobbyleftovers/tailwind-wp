@@ -18,8 +18,6 @@ TEMPLATE_PATH="./components"
 CSS_PATH="./src/css/components"
 JS_PATH="./src/js/components"
 ACF_REGISTRATION_FILE="./lib/acf-block-registration.php"
-VUE_PATH="./src/js/vue"
-VUEX_PATH="./src/js/vuex"
 JS_USE_CLASS=0
 GUTENBERG=0
 
@@ -45,12 +43,6 @@ case $i in
     shift
     ;;
 
-    # Is this a vue component?
-    -v=*|--vue=*)
-    VUE="${i#*=}"
-    shift
-    ;;
-
     # Is any part being excluded?
     -e=*|--exclude=*)
     EXCLUDE="${i#*=}"
@@ -72,7 +64,6 @@ case $i in
     echo "Arguments:"
     echo "-n | --name - Module name: -n=the-component"
     echo "-g | --gutenberg - Create compoent as a gutenberg block: -g=1"
-    echo "-v | --vue - Create a Vue compoent: -v=1"
     echo "-j | --js-class - Create js as a class (default is a function): -g=1"
     echo "-e | --exclude - Exclude css or js files: -e=\"js css\"\n\n"
     shift # past argument with no value
@@ -93,16 +84,6 @@ if [ -z ${COMPONENT_NAME+x} ]; then
     read COMPONENT_NAME
 fi
 
-# If the component being created is a vue component
-if [ $VUE = 1 ]; then
-    # Create the template file
-    # Register it in app.js
-    #Finished
-    echo "${YELLOW}Finished creating component $COMPONENT_NAME!${DEFAULT}"
-    echo
-    exit
-fi
-
 ## Update Module Path
 # TEMPLATE_PATH="$TEMPLATE_PATH"
 # TEMPLATE_PATH="$TEMPLATE_PATH/$COMPONENT_NAME"
@@ -120,9 +101,7 @@ SANITIZED_COMPONENT_NAME=`echo "$COMPONENT_NAME" | sed 's/[\._-]//g'`
 GUTENBERG_NAME=`echo "$COMPONENT_NAME" | sed 's/[\._-]/ /g'`
 # then capitalize the string
 GUTENBERG_NAME=`echo $GUTENBERG_NAME | awk 'BEGIN{RS = " "};{printf("%s ", toupper(substr($0, 1, 1)) substr($0, 2))}'`
-
-
-
+echo $COMPONENT_NAME
 # PHP File
 if [[ -e "$COMPONENT_FILE.php" ]]; then
     echo "${YELLOW}$COMPONENT_NAME.php already exists in the component directory, so we won't create a new one.${DEFUALT}"
@@ -130,24 +109,25 @@ else
 if [ $GUTENBERG = 1 ]; then
 # Create a gutenberg template
 cat <<EOF >$COMPONENT_FILE.php
+<?php
 /**
- * $GUTENBERG_NAME Block Template.
+ * $COMPONENT_NAME Block Template.
  *
- * @param   array   $block -- The block settings and attributes.
- * @param   string  $content -- The block inner HTML (empty).
- * @param   bool    $is_preview -- True during AJAX preview.
- * @param   int     $post_id -- The post ID this block is saved to.
+ * @param   array   \$block -- The block settings and attributes.
+ * @param   string  \$content -- The block inner HTML (empty).
+ * @param   bool    \$is_preview -- True during AJAX preview.
+ * @param   int     \$post_id -- The post ID this block is saved to.
  */
  
-$id = '$COMPONENT_NAME__' . $block['id'];
+\$id = '$COMPONENT_NAME' . $block['id'];
 
 // Load values and assign defaults.
-$text = get_field('test_text') ?: 'Your text...';
+\$text = get_field('test_text') ?: 'Your text...';?>
 
 <div id="<?php echo esc_attr($id); ?>" class="$COMPONENT_NAME" data-component="$COMPONENT_NAME">
     <h2>-- $COMPONENT_NAME placeholder (Remove This Line) --</h2>
     <style>
-        <?= '#'.$id ?> {
+        <?= '#'.\$id ?> {
             // add styles based on acf field setings here
         }
     </style>
@@ -186,9 +166,9 @@ echo "${YELLOW}Component template should now be located in $TEMPLATE_PATH (relat
 fi
 fi
 
-# ----------------
+# # ----------------
 
-# CSS File
+# # CSS File
 if [[ $EXCLUDE = *"css"* ]]; then
     echo "${YELLOW}Exluding css file from new component, $COMPONENT_NAME${DEFAULT}"
 elif [[ -e "$CSS_FILE.css" ]]; then

@@ -4,21 +4,19 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 class Taxonomy {
-  public function __construct ($name_plural, $name_singular, $slug, $post_types = [], $args = [], $register = true) {
+  public function __construct ($name_plural, $name_singular, $slug, $post_types = [], $args = []) {
     if(isset($name_plural) && isset($name_singular) && isset($slug)) {
       $this->name_singular = $name_singular;
       $this->name_plural = $name_plural;
       $this->slug = $slug;
       $this->post_types = $post_types;
       $this->args = $args;
-      if($register) {
-        $this->taxonomies();
-      }
+      $this->setup_taxonomy();
     }
   }
 
   // Add taxonomies
-  public function taxonomies() {
+  public function setup_taxonomy() {
     // Languages
     $labels = array(
       'name'                       => $this->name_plural,
@@ -36,19 +34,39 @@ class Taxonomy {
     );
 
     $args = array(
-      'labels'                     => $labels,
-      'hierarchical'               => false,
-      'public'                     => true,
-      'show_ui'                    => true,
-      'show_admin_column'          => true,
-      'show_in_nav_menus'          => false,
-      'show_tagcloud'              => true,
+      'labels'                      => $labels,
+      // 'hierarchical'                => false,
+      // 'public'                      => true,
+      // 'show_ui'                     => true,
+      // 'show_admin_column'           => true,
+      // 'show_in_nav_menus'           => false,
+      // 'show_tagcloud'               => false,
+      'show_in_rest'                => true
     );
 
     foreach ($this->args as $name => $value) {
       $args[$name] = $value;
     }
+    $this->args = $args;
+    // print_r($args);
+    add_action( 'init', [$this, 'register'] );
 
-    register_taxonomy( $this->slug, $this->post_types, $args );
+  }
+
+  function add_terms() {
+    foreach ($this->args['terms'] as $term_slug => $term) {
+      if (!term_exists($term_slug, $this->slug)) {
+        wp_insert_term($term, $this->slug, [
+          'slug' => $slug,
+        ]);
+      }
+    }
+  }
+
+  function register() {
+    register_taxonomy( $this->slug, $this->post_types, $this->args );
+    if (!empty($this->args['terms'])) {
+      $this->add_terms();
+    }
   }
 }

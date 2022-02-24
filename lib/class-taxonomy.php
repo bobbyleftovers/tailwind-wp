@@ -12,6 +12,7 @@ class Taxonomy {
       $this->post_types = $post_types;
       $this->args = $args;
       $this->setup_taxonomy();
+      add_action( 'init', [$this, 'register'] );
     }
   }
 
@@ -33,24 +34,7 @@ class Taxonomy {
       'not_found'                  => 'Not Found', 'text_domain'
     );
 
-    $args = array(
-      'labels'                      => $labels,
-      // 'hierarchical'                => false,
-      // 'public'                      => true,
-      // 'show_ui'                     => true,
-      // 'show_admin_column'           => true,
-      // 'show_in_nav_menus'           => false,
-      // 'show_tagcloud'               => false,
-      'show_in_rest'                => true
-    );
-
-    foreach ($this->args as $name => $value) {
-      $args[$name] = $value;
-    }
-    $this->args = $args;
-    // print_r($args);
-    add_action( 'init', [$this, 'register'] );
-
+    $this->args['labels'] = $labels;
   }
 
   function add_terms() {
